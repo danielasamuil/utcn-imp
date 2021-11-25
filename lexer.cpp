@@ -227,9 +227,9 @@ const Token &Lexer::Next()
 
       if(isdigit(chr_)){
         std::uint64_t value = 0;
-
+      
         do {
-          x = (std::uint64_t)chr_ - 48;
+          std::uint64_t x = (std::uint64_t)chr_ - 48;
           value = value*10 + x;
           NextChar();
         } while(isdigit(chr_));
