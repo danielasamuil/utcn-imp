@@ -87,6 +87,13 @@ public:
     assert(Is(Kind::STRING) && "not an identifier");
     return *value_.StringValue;
   }
+  
+  /// Return the int value.
+  uint64_t GetInt() const
+  {
+    assert(Is(Kind::INT) && "not an identifier");
+    return value_.IntValue;
+  }
 
   /// Copy operator.
   Token &operator=(const Token &that);

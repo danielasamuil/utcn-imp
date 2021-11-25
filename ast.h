@@ -45,6 +45,7 @@ public:
     REF,
     BINARY,
     CALL,
+    INT,
   };
 
 public:
@@ -56,6 +57,24 @@ private:
   /// Kind of the expression.
   Kind kind_;
 };
+
+/**
+ * Expression referring to an integer.
+ */
+class RefInteger : public Expr {
+public:
+  RefInteger(const std::uint64_t &val)
+    : Expr(Kind::INT)
+    , val_(val)
+  {
+  }
+
+  const std::uint64_t &GetVal() const { return val_; }
+
+private:
+  std::uint64_t val_;
+};
+
 
 /**
  * Expression referring to a named value.

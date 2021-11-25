@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/daniela/TD/my_git_repo/utcn-imp/interp.cpp
+interp.h
+/home/daniela/TD/my_git_repo/utcn-imp/interp.h
+program.h
+/home/daniela/TD/my_git_repo/utcn-imp/program.h
+iostream
+-
+
+/home/daniela/TD/my_git_repo/utcn-imp/interp.h
+cassert
+-
+vector
+-
+runtime.h
+/home/daniela/TD/my_git_repo/utcn-imp/runtime.h
+
+/home/daniela/TD/my_git_repo/utcn-imp/program.h
+cassert
+-
+cstdint
+-
+cstring
+-
+vector
+-
+
+/home/daniela/TD/my_git_repo/utcn-imp/runtime.h
+map
+-
+
